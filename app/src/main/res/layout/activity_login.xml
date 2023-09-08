@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/primary"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/tvWait"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Wait"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="80dp"
+        >
+
+
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:padding="10dp"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            />
+
+        <EditText
+            android:id="@+id/passWord"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/showPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Password"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LOGIN"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:backgroundTint="#7C388E3C"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have any account?"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/signupText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signup"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:paddingLeft="10dp"
+                android:textColor="#58BD5D"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

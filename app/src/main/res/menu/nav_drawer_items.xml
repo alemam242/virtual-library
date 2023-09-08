@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/home"
+            android:title="HOME"
+            android:icon="@drawable/home_icon"
+            android:checkable="true"
+            />
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single"
+        >
+            <item android:title="Setting">
+                <menu>
+                    <item
+                        android:id="@+id/changePassword"
+                        android:title="Change Password"
+                        android:icon="@drawable/change_password"
+                        android:checkable="true"
+                        />
+
+                    <item
+                        android:id="@+id/deleteAccount"
+                        android:title="Delete Account"
+                        android:icon="@drawable/delete"
+                        android:checkable="true"
+                        />
+                </menu>
+            </item>
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/share"
+            android:title="SHARE"
+            android:icon="@drawable/share_icon"
+            android:checkable="true"
+            />
+
+    </group>
+</menu>
